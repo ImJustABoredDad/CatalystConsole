@@ -55,7 +55,12 @@ A C++ console application template that works on Windows and Linux. This templat
 
 ## Documentation
 
-For setup instructions, usage guides, and detailed information, see the [docs folder](docs/).
+For setup instructions, usage guides, and detailed information, see the [docs folder](docs/):
+
+- [01-setup.md](docs/01-setup.md) - How to install everything
+- [02-usage.md](docs/02-usage.md) - How to use the template  
+- [03-structure.md](docs/03-structure.md) - How the project is organized
+- [04-dependencies.md](docs/04-dependencies.md) - Adding external libraries
 
 ## Contributing
 
