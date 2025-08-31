@@ -1,104 +1,106 @@
 # CatalystConsole
 
-A cross-platform C++ console application framework built with modern C++23 features and the Premake build system. Designed for developers who need a robust, efficient foundation for building console applications that work seamlessly across Windows and Linux platforms.
+A C++ console application template that works on Windows and Linux. This template gives you a basic project structure with a build system already set up, so you can start writing C++ code right away instead of spending time configuring everything from scratch.
 
-## What This Project Gives You
+## What You Get
 
-### 🚀 **Modern C++ Development Experience**
-- **C++23 Standard**: Access to the latest language features like `std::print`, `std::expected`, and modern template syntax
-- **Cross-Platform Compatibility**: Write once, run anywhere - no platform-specific code needed
-- **Performance Optimized**: Built with modern compiler optimizations and efficient data structures
+### **Basic C++ Project Structure**
+- A `src` folder for your C++ source files
+- A `main.cpp` file to start with
+- Separate folders for organizing your code
 
-### 🛠️ **Professional Build System**
-- **Premake Integration**: Generate project files for Visual Studio, VS Code, Make, and more with a single command
-- **Multi-Configuration Support**: Debug and Release builds with proper symbol handling
-- **Dependency Management**: Smart library detection and linking without hardcoded paths
-- **IDE Agnostic**: Works with your preferred development environment
+### **Build System (Premake)**
+- Generates project files for Visual Studio, VS Code, and other editors
+- Handles both Debug and Release builds
+- Works on Windows and Linux without changes
 
-### 🏗️ **Clean, Scalable Architecture**
-- **Modular Design**: Well-organized code structure that grows with your project
-- **Separation of Concerns**: Clear boundaries between core systems, utilities, and application logic
-- **Extensible Framework**: Easy to add new features without breaking existing code
-- **Best Practices**: Follows modern C++ development patterns and conventions
+### **C++23 Setup**
+- Configured to use the latest C++ standard
+- Includes basic utility files to get started
+- Ready to compile with modern C++ features
 
-### 🔧 **Developer Productivity Features**
-- **Zero Configuration**: Add new source files without build system changes
-- **Smart Dependencies**: Automatic library detection and linking
-- **Cross-Platform Scripts**: PowerShell and Bash scripts for consistent workflow
-- **Documentation**: Comprehensive guides for setup, usage, and customization
+### **Cross-Platform Support**
+- PowerShell script for Windows
+- Bash script for Linux
+- Same code works on both operating systems
 
-## Key Benefits for Developers
+## Why Use This Template
 
-### **Time Savings**
-- No need to set up cross-platform build systems from scratch
-- Automatic project file generation for multiple IDEs
-- Pre-configured debug and release configurations
+### **Save Time**
+- No need to figure out how to set up a C++ project
+- Build system is already configured
+- You can focus on learning C++ instead of build tools
 
-### **Code Quality**
-- Modern C++23 features for better error handling and performance
-- Clean architecture patterns that scale with project size
-- Consistent coding standards across the project
+### **Learn Modern C++**
+- Uses current C++ standards
+- Shows how to organize a real project
+- Includes examples of basic C++ code structure
 
-### **Maintenance**
-- Single codebase for multiple platforms
-- Easy dependency updates and management
-- Well-documented structure for team collaboration
+### **Avoid Common Problems**
+- No more "compiler not found" errors
+- Build settings are already correct
+- Works the same way on different computers
 
-### **Flexibility**
-- Works with any C++23 compatible compiler
-- Easy to customize for specific project needs
-- Extensible framework for additional features
+## What You Need
 
-## Technology Stack
+### **Windows**
+- Visual Studio 2022 (free Community version works)
+- Or MinGW-w64 compiler
+- Premake 5 (download and add to PATH)
 
-- **Language**: C++23 with modern features
-- **Build System**: Premake 5 for cross-platform project generation
-- **Platforms**: Windows (x64/x86) and Linux (x64/x86)
-- **Compilers**: Visual Studio 2022+, GCC 13+, Clang 15+
-- **Scripts**: PowerShell (Windows) and Bash (Linux)
+### **Linux**
+- GCC 13+ or Clang 15+
+- Make
+- Premake 5
 
 ## Project Structure
 
 ```
-├── src/                  # Source files
-│   ├── Core/            # Core systems and utilities
-│   │   ├── Common/      # Common utilities and helpers
-│   │   └── System/      # System-level services
-│   └── main.cpp         # Application entry point
-├── scripts/              # Build and automation scripts
-├── docs/                 # Comprehensive documentation
-└── build/                # Generated project files
+├── src/                  # Put your C++ files here
+│   ├── Core/            # Core code
+│   │   ├── Common/      # Shared utilities
+│   │   └── System/      # System code
+│   └── main.cpp         # Start here
+├── scripts/              # Build scripts
+├── docs/                # How-to guides
+└── build/                # Generated files (created when you build)
 ```
 
-## Getting Started
+## How to Start
 
-For detailed setup and usage instructions, see our comprehensive documentation:
+1. **Clone this repository**
+2. **Run the build script**:
+   - Windows: `.\build.ps1`
+   - Linux: `./build.sh`
+3. **Open the generated project** in your editor
+4. **Start writing C++ code**
 
-- **[Setup Guide](docs/SETUP.md)** - Complete installation and first-time setup
-- **[Usage Guide](docs/USAGE.md)** - How to use and customize the framework
-- **[Structure Guide](docs/STRUCTURE.md)** - Understanding the project organization
-- **[Dependencies Guide](docs/DEPENDENCIES.md)** - Adding and managing external libraries
+For detailed instructions, see the docs folder:
+- [Setup Guide](docs/SETUP.md) - How to install everything
+- [Usage Guide](docs/USAGE.md) - How to use the template
+- [Structure Guide](docs/STRUCTURE.md) - How the project is organized
 
-## Quick Commands
+## Adding Your Code
 
-```bash
-# Generate project files
-.\build.ps1          # Windows
-./build.sh           # Linux
+- Put new `.cpp` and `.h` files in the `src` folder
+- The build system automatically finds them
+- No need to edit build files when adding code
 
-# Build and run
-# Open generated project files in your preferred IDE
-```
+## Getting Help
+
+- Check the docs folder first
+- Open a GitHub issue if something doesn't work
+- Make sure you have the right tools installed
 
 ## Contributing
 
-Contributions are welcome! This project thrives on community input. Please feel free to submit Pull Requests or open issues for bugs and feature requests.
+Found a bug or have an idea? Feel free to submit a Pull Request or open an issue.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT License - see [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
+## What This Uses
 
-- Built with [Premake](https://premake.github.io/) build system
-- Leverages modern C++23 features for optimal performance and developer experience
+- [Premake](https://premake.github.io/) for building
+- C++23 standard for modern C++ features
