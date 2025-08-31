@@ -41,56 +41,21 @@ A C++ console application template that works on Windows and Linux. This templat
 - Build settings are already correct
 - Works the same way on different computers
 
-## What You Need
-
-### **Windows**
-- Visual Studio 2022 (free Community version works)
-- Or MinGW-w64 compiler
-- Premake 5 (download and add to PATH)
-
-### **Linux**
-- GCC 13+ or Clang 15+
-- Make
-- Premake 5
-
 ## Project Structure
 
 ```
 ├── src/                  # Put your C++ files here
 │   ├── Core/            # Core code
-│   │   ├── Common/      # Shared utilities
-│   │   └── System/      # System code
+│   │   └── Common/      # Shared utilities
 │   └── main.cpp         # Start here
 ├── scripts/              # Build scripts
 ├── docs/                # How-to guides
 └── build/                # Generated files (created when you build)
 ```
 
-## How to Start
+## Documentation
 
-1. **Clone this repository**
-2. **Run the build script**:
-   - Windows: `.\build.ps1`
-   - Linux: `./build.sh`
-3. **Open the generated project** in your editor
-4. **Start writing C++ code**
-
-For detailed instructions, see the docs folder:
-- [Setup Guide](docs/SETUP.md) - How to install everything
-- [Usage Guide](docs/USAGE.md) - How to use the template
-- [Structure Guide](docs/STRUCTURE.md) - How the project is organized
-
-## Adding Your Code
-
-- Put new `.cpp` and `.h` files in the `src` folder
-- The build system automatically finds them
-- No need to edit build files when adding code
-
-## Getting Help
-
-- Check the docs folder first
-- Open a GitHub issue if something doesn't work
-- Make sure you have the right tools installed
+For setup instructions, usage guides, and detailed information, see the [docs folder](docs/).
 
 ## Contributing
 
