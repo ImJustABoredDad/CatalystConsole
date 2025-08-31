@@ -1,148 +1,104 @@
-# C++ Console Application Template
+# CatalystConsole
 
-A cross-platform C++ template project using Premake build system. This template provides a clean foundation for console applications that need to run on both Windows and Linux systems.
+A cross-platform C++ console application framework built with modern C++23 features and the Premake build system. Designed for developers who need a robust, efficient foundation for building console applications that work seamlessly across Windows and Linux platforms.
 
-## Features
+## What This Project Gives You
 
-- **Cross-platform**: Supports Windows and Linux builds
-- **Premake build system**: Easy project generation for multiple IDEs
-- **Modern C++**: Uses C++23 standard with cutting-edge features
-- **Debug/Release configurations**: Separate build configurations
-- **Minimal template**: Clean, focused structure without unnecessary complexity
+### 🚀 **Modern C++ Development Experience**
+- **C++23 Standard**: Access to the latest language features like `std::print`, `std::expected`, and modern template syntax
+- **Cross-Platform Compatibility**: Write once, run anywhere - no platform-specific code needed
+- **Performance Optimized**: Built with modern compiler optimizations and efficient data structures
 
-## Prerequisites
+### 🛠️ **Professional Build System**
+- **Premake Integration**: Generate project files for Visual Studio, VS Code, Make, and more with a single command
+- **Multi-Configuration Support**: Debug and Release builds with proper symbol handling
+- **Dependency Management**: Smart library detection and linking without hardcoded paths
+- **IDE Agnostic**: Works with your preferred development environment
 
-### Windows
-- Visual Studio 2022 or later (Community edition is fine)
-- Or Visual Studio Build Tools 2022+
-- Or MinGW-w64 (GCC 13+)
+### 🏗️ **Clean, Scalable Architecture**
+- **Modular Design**: Well-organized code structure that grows with your project
+- **Separation of Concerns**: Clear boundaries between core systems, utilities, and application logic
+- **Extensible Framework**: Easy to add new features without breaking existing code
+- **Best Practices**: Follows modern C++ development patterns and conventions
 
-### Linux
-- GCC 13+ or Clang 15+
-- Make
-- Build essentials package
+### 🔧 **Developer Productivity Features**
+- **Zero Configuration**: Add new source files without build system changes
+- **Smart Dependencies**: Automatic library detection and linking
+- **Cross-Platform Scripts**: PowerShell and Bash scripts for consistent workflow
+- **Documentation**: Comprehensive guides for setup, usage, and customization
 
-### Both Platforms
-- [Premake 5](https://premake.github.io/download) - Download and add to PATH
+## Key Benefits for Developers
+
+### **Time Savings**
+- No need to set up cross-platform build systems from scratch
+- Automatic project file generation for multiple IDEs
+- Pre-configured debug and release configurations
+
+### **Code Quality**
+- Modern C++23 features for better error handling and performance
+- Clean architecture patterns that scale with project size
+- Consistent coding standards across the project
+
+### **Maintenance**
+- Single codebase for multiple platforms
+- Easy dependency updates and management
+- Well-documented structure for team collaboration
+
+### **Flexibility**
+- Works with any C++23 compatible compiler
+- Easy to customize for specific project needs
+- Extensible framework for additional features
+
+## Technology Stack
+
+- **Language**: C++23 with modern features
+- **Build System**: Premake 5 for cross-platform project generation
+- **Platforms**: Windows (x64/x86) and Linux (x64/x86)
+- **Compilers**: Visual Studio 2022+, GCC 13+, Clang 15+
+- **Scripts**: PowerShell (Windows) and Bash (Linux)
 
 ## Project Structure
 
 ```
 ├── src/                  # Source files
-│   ├── Core/            # Core systems
-│   │   ├── Common/      # Common utilities
-│   │   │   ├── Utilities.h
-│   │   │   └── Utilities.cpp
-│   │   └── System/      # System services
-│   └── main.cpp         # Main application entry point
-├── scripts/              # Build and utility scripts
-│   └── premake/         # Premake build system
-│       ├── config.lua   # Build configuration
-│       └── deps.lua     # Simple dependency helper
-├── docs/                 # Detailed documentation
-│   ├── SETUP.md         # Installation and setup
-│   ├── USAGE.md         # Usage and customization
-│   ├── STRUCTURE.md     # Project organization
-│   └── DEPENDENCIES.md  # Adding external libraries
-├── build/                # Generated project files
-├── build.ps1             # Windows PowerShell build script
-├── build.sh              # Linux shell build script
-└── README.md            # This file
+│   ├── Core/            # Core systems and utilities
+│   │   ├── Common/      # Common utilities and helpers
+│   │   └── System/      # System-level services
+│   └── main.cpp         # Application entry point
+├── scripts/              # Build and automation scripts
+├── docs/                 # Comprehensive documentation
+└── build/                # Generated project files
 ```
 
-## Quick Start
+## Getting Started
 
-### 1. Generate Project Files
-```bash
-# Windows
-.\build.ps1
+For detailed setup and usage instructions, see our comprehensive documentation:
 
-# Linux
-./build.sh
-```
-
-### 2. Build & Run
-- **Visual Studio**: Open `build/CatalystConsole.sln`
-  - Select platform: **x64** for 64-bit, **Win32** for 32-bit
-  - Select configuration: **Debug** or **Release**
-- **Command Line**: Use the generated Makefile or MSBuild
-- **Executable**: Located in `build/bin/[Debug|Release]/[x64|x86]/`
-
-## Documentation
-
-- **[Setup Guide](docs/SETUP.md)** - Installation and first-time setup
-- **[Usage Guide](docs/USAGE.md)** - How to use and customize the template
+- **[Setup Guide](docs/SETUP.md)** - Complete installation and first-time setup
+- **[Usage Guide](docs/USAGE.md)** - How to use and customize the framework
 - **[Structure Guide](docs/STRUCTURE.md)** - Understanding the project organization
-- **[Dependencies Guide](docs/DEPENDENCIES.md)** - Adding external libraries
+- **[Dependencies Guide](docs/DEPENDENCIES.md)** - Adding and managing external libraries
 
-## Configuration Options
-
-### Build Configurations
-- **Debug**: Includes debug symbols, no optimization
-- **Release**: Optimized, no debug symbols
-
-### Platforms
-- **x64**: 64-bit builds (default)
-- **x86**: 32-bit builds
-
-### C++ Standard
-- **C++23**: Latest C++ standard with modern features
-  - `std::print` for formatted output
-  - `std::expected` for error handling in file operations
-  - Modern template features and syntax
-
-## Customization
-
-### Renaming Your Project
-The template includes a built-in project renaming tool that automatically customizes all files for your new project:
+## Quick Commands
 
 ```bash
-# Windows
-.\build.ps1
-# Select option 4: "Rename Project (Customize Template)"
+# Generate project files
+.\build.ps1          # Windows
+./build.sh           # Linux
 
-# Linux
-./build.sh
-# Select option 4: "Rename Project (Customize Template)"
+# Build and run
+# Open generated project files in your preferred IDE
 ```
 
-**What gets renamed:**
-- Project name and solution name
-- Executable name
-- Company/organization information
-- All references in build files, README, and source code
+## Contributing
 
-**Example workflow:**
-1. Run the build script and select "Rename Project"
-2. Enter your project details (e.g., "MyGame", "ServerApp")
-3. Confirm the changes
-4. Your template is now customized for your project!
-5. Run the build script again to generate project files
-
-### Adding New Source Files
-- **Place files** in the `src/` directory
-- **Premake automatically includes** all `.cpp`, `.h`, and `.hpp` files
-- **No configuration needed** - just add files and rebuild
-
-### Adding Dependencies
-- **Smart dependency helper** automatically finds libraries
-- **No hardcoded paths** - works on any machine
-- **Simple one-liner** to add most common libraries
-
-**See [Dependencies Guide](docs/DEPENDENCIES.md)** for detailed examples and advanced usage.
-
-## Need Help?
-
-### Common Issues
-- **Premake not found**: Install Premake 5 and add to PATH
-- **Build errors**: Ensure your compiler supports C++23
-- **Setup problems**: See [Setup Guide](docs/SETUP.md) for detailed troubleshooting
-
-### Getting Help
-- **Check the docs**: Each guide has troubleshooting sections
-- **Verify prerequisites**: Make sure all tools are installed correctly
-- **Check build output**: Generated project files show detailed error information
+Contributions are welcome! This project thrives on community input. Please feel free to submit Pull Requests or open issues for bugs and feature requests.
 
 ## License
 
-This template is provided as-is for educational and development purposes.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Built with [Premake](https://premake.github.io/) build system
+- Leverages modern C++23 features for optimal performance and developer experience
